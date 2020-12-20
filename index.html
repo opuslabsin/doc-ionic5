@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Technical information to help you setup mobile template of Ionic5">
+<meta name="keywords" content=" ">
+<title>Ionic5 Template Installation Documentation | Ionic5 Template Documentation</title>
+<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="css/customstyles.css">
+<link rel="stylesheet" href="css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="css/theme-blue.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/2.0.0/anchor.min.js"></script>
+<script src="js/toc.js"></script>
+<script src="js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link rel="alternate" type="application/rss+xml" title="documentation-ionic5-template" href="opuslabsin.github.io/feed.xml">
+
+<style type="text/css">
+    body {
+        font-family: 'Montserrat', sans-serif;
+        /*font-family: 'Open Sans', sans-serif;*/
+        font-size: 18px;
+    }    
+	.home {
+    	width: 100%;
+        height: 700px;
+        background: -moz-linear-gradient(to bottom,#5789B4 0,#2171B6 52%);
+        background: -webkit-linear-gradient(to bottom,#5789B4 0,#2171B6 52%);
+        background: linear-gradient(to bottom,#5789B4 0,#2171B6 52%);
+    }
+    .jumbo {
+    	border-radius: initial;
+        margin-bottom: auto;
+        z-index: 2;
+        position: absolute;
+        left: 0;
+        top: 260px;
+        right: 0;
+    }
+    #home-title {
+        font-size: 2.9em;
+        text-align: center;
+        color: #fff;
+        font-family: times, arial !important;
+        font-weight: 600;
+    }
+
+    #home-title-txt {
+        font-size: 22px;
+        text-align: center;
+        color: #fff;
+        font-family: open-sans, Tahoma, Verdana, sans-serif !important;
+    }
+
+    #scroll-down {
+        position: absolute;
+        left: 50%;
+        top: 300%;
+        z-index: 1;
+    }
+
+    #particles-js {
+      position: absolute;
+      width: 100%;
+      height: 700px;
+      background-color: transparent;  
+    }
+
+    .post-content {
+    	padding-top: 100px;
+    }
+
+    div#toc >ul::before {
+    	font-size: 24px;
+    }
+
+    .down-scroll a {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        z-index: 2;
+        display: inline-block;
+        -webkit-transform: translate(0,-50%);
+        transform: translate(0,-50%);
+        color: #fff;
+        font: 400 20px / 1 'Josefin Sans', sans-serif;
+        letter-spacing: .1em;
+        text-decoration: none;
+        transition: opacity .3s;
+        transition-duration: .5s;
+        transition-property: all;
+        transition-timing-function: ease-in-out;
+    }
+
+    #scroll-down a span
+    {
+    	position: absolute;
+    	top: 0;
+    	left: 50%;
+    	width: 45px;
+    	height: 45px;
+    	margin-left: -23px;
+    	border: 1px solid #fff;
+    	border-radius: 100%;
+    	box-sizing: border-box;
+    }
+
+    #scroll-down a span::after
+    {
+    	position: absolute;
+    	top: 50%;
+    	left: 50%;
+    	content: '';
+    	width: 16px;
+    	height: 16px;
+    	margin: -12px 0 0 -8px;
+    	border-left: 1px solid #fff;
+    	border-bottom: 1px solid #fff;
+    	-webkit-transform: rotate(-45deg);
+    	transform: rotate(-45deg);
+    	box-sizing: border-box;
+    }
+
+    #scroll-down a span::before
+    {
+    	position: absolute;
+    	top: 0;
+    	left: 0;
+    	z-index: -1;
+    	content: '';
+    	width: 44px;
+    	height: 44px;
+    	box-shadow: 0 0 0 0 rgba(255,255,255,.1);
+    	border-radius: 100%;
+    	opacity: 0;
+    	-webkit-animation: 3s infinite sdb03;
+    	animation: 3s infinite sdb03;
+    	box-sizing: border-box;
+    }
+
+    .down-scroll a:hover
+    {
+    	transition: all 1s ease;
+    	-webkit-transition: 1s ease-out;
+    	-moz-transition: 1s ease-out;
+    	-o-transition: 1s ease-out;
+    	opacity: .5;
+    	transition: all 1s ease;
+    	bottom: 1%;
+    	color: #fff;
+    	-webkit-transition: 1s ease-out;
+    	-moz-transition: 1s ease-out;
+    	-o-transition: 1s ease-out;
+    	opacity: .5;
+    }
+
+    .container-fluid {
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .nav div.logo {
+        float: left;
+        width: auto;
+        height: auto;
+        padding-left: 3rem;
+    }
+
+    .nav {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+        width: 100%;
+        height: 65px;
+        position: absolute;
+        line-height: 40px;
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 20px;
+        -webkit-transition: all .4s ease;
+        transition: all .4s ease;
+        z-index: 9999 !important;
+    }
+
+    footer {
+        color: #fff;
+        background-color: #2171B6;
+        padding-top: 137px;
+        padding-bottom: 40px;    
+        position: relative;
+        width: 100%;
+        z-index: 1;
+        overflow: hidden;
+        padding-left: 50px;
+        padding-right: 50px;
+        margin: 0;
+    }
+
+    .oval-wrap {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 232px;
+        background-color: #fff;
+        overflow: hidden;
+    }
+
+    .bg-oval {
+        position: absolute;
+        left: 50%;
+        top: 0;
+        transform: translateX(-50%);
+        min-width: 2424px;
+        height: 866px;
+    }
+    .bg-oval img {
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+
+    #footer-cta {
+        overflow: visible;
+        text-align: center;
+        padding-top: 438px;
+        padding-bottom: 19px;
+        position: relative;
+        width: 100%;
+        z-index: 1;
+        overflow: hidden;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    #footer-cta .bg-wrap {
+        height: 460px;
+    }
+    .bg-wrap {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    #footer-cta .background {
+        width: 605px;
+        margin-left: -302px;
+    }
+    .background.cn {
+        left: 50%;
+        width: 1800px;
+        margin-left: -900px;
+    }
+    .basic-scaler {
+        transform-origin: center top;
+    }
+    .background {
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 0;
+    }
+    #footer-cta.on .blob {
+        -webkit-animation: floatY infinite 10s ease-in-out;
+        -moz-animation: floatY infinite 10s ease-in-out;
+        animation: floatY infinite 10s ease-in-out;
+        animation-fill-mode: forwards;
+        animation-duration: 8s;
+    }
+    #footer-cta .blob[data-num="1"] {
+        width: 150px;
+        left: 50px;
+        top: 242px;
+    }
+    .part {
+        position: absolute;
+        left: 40px;
+        top: 0;
+    }
+    #footer-cta .background .main {
+        width: 505px;
+    }
+
+    .part img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    #footer-cta.on .blob[data-num="2"] {
+        animation-delay: -5s;
+    }
+    #footer-cta.on .blob {
+        -webkit-animation: floatY infinite 10s ease-in-out;
+        -moz-animation: floatY infinite 10s ease-in-out;
+        animation: floatY infinite 10s ease-in-out;
+        animation-fill-mode: forwards;
+        animation-duration: 8s;
+    }
+    #footer-cta .blob[data-num="2"] {
+        width: 130px;
+        left: 410px;
+        top: 65px;
+    }
+
+    #footer-cta.on .blob[data-num="2"] img {
+        animation-delay: -4s;
+    }
+    #footer-cta.on .blob img {
+        -webkit-animation: aboutWheelSpin infinite 15s linear;
+        -moz-animation: aboutWheelSpin infinite 15s linear;
+        animation: aboutWheelSpin infinite 15s linear;
+        animation-fill-mode: forwards;
+        animation-duration: 8s;
+    }
+
+    #footer-cta .man {
+        width: 140px;
+        left: 355px;
+        top: 120px;
+    }
+
+    .documentation {
+        padding-bottom: 100px;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .section-col {
+        /*margin-top: 150px;*/
+    }
+
+    .section-title, #introduction {
+        font-size: 33px;
+        line-height: 1.55;    
+        margin-bottom: 20px;
+        color: #2171B6;
+        font-family: times, arial;
+    }
+
+    .letter {
+      display: inline-block;
+      line-height: 1em;
+    }
+
+    .seperator {
+        padding: 100px 0;
+    }
+
+    @media screen and (min-width: 992px) {
+        .section-col {
+            margin-top: 80px;
+        }
+    }
+
+    @-webkit-keyframes sdb03{0%,100%{opacity:0}30%{opacity:1}60%{box-shadow:0 0 0 60px rgba(255,255,255,.1);opacity:0}} 
+
+    @keyframes sdb03{0%,100%{opacity:0}30%{opacity:1}60%{box-shadow:0 0 0 60px rgba(255,255,255,.1);opacity:0}} 
+
+    @keyframes floatY {
+      0% {
+        transform: translateY(-20px);
+      }
+      50% {
+        transform: translateY(20px);
+      }
+      100% {
+        transform: translateY(-20px);
+      }
+    }
+    .float-y {
+      -webkit-animation: floatY infinite 10s ease-in-out;
+      -moz-animation: floatY infinite 10s ease-in-out;
+      animation: floatY infinite 10s ease-in-out;
+      animation-fill-mode: forwards;
+    }
+
+    @keyframes aboutWheelSpin {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+    .about-wheelspin {
+      -webkit-animation: aboutWheelSpin infinite 15s linear;
+      -moz-animation: aboutWheelSpin infinite 15s linear;
+      animation: aboutWheelSpin infinite 15s linear;
+      animation-fill-mode: forwards;
+    }
+
+</style>
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+    <nav class="nav">
+        <div class="container-fluid">
+            <div class="logo"><a href="#"><img src="images/company_logo.png" alt=""></a>
+            </div>            
+        </div>
+    </nav>
+    <!-- Page Content -->
+    <section class="home">
+        <div class="area">
+            <div id="particles-js"></div>
+            <div class="jumbo">
+                <div class="container ">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <p id="home-title"><span class="letter">Ionic5 Template Installation Documentation</span></p>
+                            <p id="home-title-txt">Technical information to help you setup mobile template of Ionic5</p>
+                        </div>                        
+                        <section id="scroll-down" class="down-scroll"><a href="#introduction"><span class="mx-auto"></span></a>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="container documentation">
+          <div id="main">
+
+            <!-- Content Row -->
+            <div class="row">
+                
+                
+
+                <!-- Content Column -->
+                <div class="col-md-12" id="tg-sb-content">
+                    
+
+<div class="post-content">
+
+   
+
+    
+
+
+    
+
+
+    
+
+  <div class="row">
+  <div class="col-md-6 section-col">
+    <h2 id="mobile-title" class="section-title">Instructions for building mobile app</h2>
+    <p>Following section explains how to generate android and iOS application from the template source code</p>
+  </div>
+  <div class="col-md-6">
+    <section id="footer-cta" class="hasAnim on" data-offset="100">
+      <div class="bg-wrap">
+        <div class="background cn basic-scaler">
+          <!-- animations -->
+
+          <div class="blob part" data-num="1"><img src="https://cognitohq.com/wp-content/themes/cognito/images/parts/footer-blob1.svg" /></div>
+
+          <div class="part main"><img src="https://cognitohq.com/wp-content/themes/cognito/images/parts/footer-cta.svg" /></div>      
+
+          <div class="part main"><img src="https://cognitohq.com/wp-content/themes/cognito/images/parts/footer-girl@2x.png" /></div>
+
+          <div class="blob part" data-num="2"><img src="https://cognitohq.com/wp-content/themes/cognito/images/parts/footer-blob2.svg" /></div>
+          <div class="man part"><img src="https://cognitohq.com/wp-content/themes/cognito/images/parts/footer-man@2x.png" /></div>
+
+          <!-- end animations -->
+        </div>
+      </div>    
+    </section>
+  </div>  
+</div>
+<div>
+
+  <ol>
+    <li>
+      <h3 id="download-and-setup-ionic">Download And Setup Ionic</h3>
+      <ul>
+        <li><code class="language-plaintext highlighter-rouge">download node</code> Install Node.js version 13.14.0 on your system <a href="https://nodejs.org/en/blog/release/v13.14.0/">https://nodejs.org/en/blog/release/v13.14.0/</a>.</li>
+        <li>Install node with installer and on screen instructions.</li>
+        <li>Verify node installation by running <code class="language-plaintext highlighter-rouge">node -v</code> you should see version 13.14.0 output.</li>
+        <li><code class="language-plaintext highlighter-rouge">Install ionic globally 5.4.16</code> -&gt; <code class="language-plaintext highlighter-rouge">npm install -g ionic@5.4.16</code>.</li>
+        <li>Verify ionic installation by running <code class="language-plaintext highlighter-rouge">ionic -v</code> you should see version 5.4.16 output.</li>
+        <li><code class="language-plaintext highlighter-rouge">Install cordova globally</code> for platform builds -&gt; <code class="language-plaintext highlighter-rouge">npm install -g cordova@10.0.0</code>.</li>
+        <li>Verify installation by running <code class="language-plaintext highlighter-rouge">cordova -v</code> you should see version 10.0.0 output.</li>
+      </ul>
+    </li>
+    <li>
+      <h3 id="first-run">First Run</h3>
+      <ul>
+        <li><strong>Requires Step 1: Download And Setup Ionic</strong></li>
+        <li>Open your desired cmd/terminal and navigate to the source folder (project).</li>
+        <li>run <code class="language-plaintext highlighter-rouge">npm install</code> to install project dependencies.</li>
+        <li>then run <code class="language-plaintext highlighter-rouge">ionic serve</code> to run your project in browser.</li>
+        <li>Entering into <code class="language-plaintext highlighter-rouge">INSPECT</code> mode of browser to see mobile view of the app</li>
+      </ul>
+    </li>
+    <li>
+      <h3 id="setup-and-customization">Setup And Customization</h3>
+      <p>### resources</p>
+      <ul>
+        <li>To change app icon and splash in your template for refer <a href="https://stackoverflow.com/questions/55813237/how-to-change-default-app-icon-and-splash-screen-in-ionic-4-application">https://stackoverflow.com/questions/55813237/how-to-change-default-app-icon-and-splash-screen-in-ionic-4-application</a>.
+ ### src
+   ### app</li>
+        <li>Here show all components first and to change according your screens. 
+   ### assets
+          <ul>
+            <li><code class="language-plaintext highlighter-rouge">images</code> To change logo and other image assets (only <code class="language-plaintext highlighter-rouge">.png</code> files) in your templete from <code class="language-plaintext highlighter-rouge">src/assets/images</code>.</li>
+            <li>To chnage other image assets (other <code class="language-plaintext highlighter-rouge">name</code> image). Here you put assets path <code class="language-plaintext highlighter-rouge">src/assets/image_name.png</code> in your screen <code class="language-plaintext highlighter-rouge">app</code> <code class="language-plaintext highlighter-rouge">your_page_name.page.html</code>. to display same screen.
+ ### Changing Colours And Theme Settings.
+              <ul>
+                <li>For this you’ll have to focus on two files. i.e.</li>
+                <li><code class="language-plaintext highlighter-rouge">src/global.scss</code> - containing application’s primary colours and overall styling of various components.</li>
+                <li><code class="language-plaintext highlighter-rouge">src/theme/variables.scss</code> - containing primary colours for various widgets used throughout the application. For example radio buttons. Also used for dark mode colouring.</li>
+                <li>Find <code class="language-plaintext highlighter-rouge">--primary</code> and <code class="language-plaintext highlighter-rouge">--secondary</code> in <code class="language-plaintext highlighter-rouge">global.scss</code> to change main <code class="language-plaintext highlighter-rouge">respective colour</code> of the app. Other colour codes below are also customizable.</li>
+                <li>Find <code class="language-plaintext highlighter-rouge">--ion-color-primary</code> in <code class="language-plaintext highlighter-rouge">theme/variable.scss</code> to change main <code class="language-plaintext highlighter-rouge">respective colour</code> of widgets in application.</li>
+                <li>Find <code class="language-plaintext highlighter-rouge">@media (prefers-color-scheme: dark)</code> in <code class="language-plaintext highlighter-rouge">theme/variable.scss</code> and uncomment everything below from here to enable System wide dark mode colour settings.
+ ### config.xml</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><code class="language-plaintext highlighter-rouge">config.xml</code> has two values. Your template’s package name/template id in id parameter in line no. 2. and template name in line number 3.</li>
+      </ul>
+    </li>
+    <li>
+      <h3 id="platform-builds">Platform Builds</h3>
+      <ul>
+        <li><strong>Requires Step 1: Download And Setup Ionic</strong></li>
+        <li>Download and install Java here: <a href="https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html">https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html</a></li>
+        <li>Android SDK setup. We recommend installing <code class="language-plaintext highlighter-rouge">Android Studio</code> for easy setup. <a href="https://developer.android.com/studio/">https://developer.android.com/studio/</a>
+ ### Android Build
+          <ul>
+            <li>To add platform run <code class="language-plaintext highlighter-rouge">ionic cordova platform add android@8.1.0</code></li>
+            <li>To prepare platform run <code class="language-plaintext highlighter-rouge">ionic cordova prepare android</code></li>
+            <li>To build debuggable .apk file run <code class="language-plaintext highlighter-rouge">ionic cordova build android --prod</code></li>
+            <li>To build release unsigned .apk file run <code class="language-plaintext highlighter-rouge">ionic cordova build android --prod --release</code></li>
+            <li>To generate a <code class="language-plaintext highlighter-rouge">Keystore</code> refer this. <a href="https://stackoverflow.com/questions/11446121/how-do-i-generate-a-keystore-for-google-play">https://stackoverflow.com/questions/11446121/how-do-i-generate-a-keystore-for-google-play</a></li>
+            <li>To sign builds and publishing refer this. <a href="https://ionicframework.com/docs/deployment/play-store">https://ionicframework.com/docs/deployment/play-store</a>.
+ ### IOS Build</li>
+            <li>To add platform run <code class="language-plaintext highlighter-rouge">ionic cordova platform add ios@5.1.1</code></li>
+            <li>To prepare platform run <code class="language-plaintext highlighter-rouge">ionic cordova prepare ios</code></li>
+            <li>To build debuggable .apk file run <code class="language-plaintext highlighter-rouge">ionic cordova build ios --prod</code></li>
+            <li>Opening respective project, open the .xcworkspace file in ./platforms/ios/ to start Xcode.</li>
+            <li>For XCode setup refer this. <a href="https://ionicframework.com/docs/developing/ios">https://ionicframework.com/docs/developing/ios</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <h3 id="deployment-of-applications">Deployment Of Applications</h3>
+      <p>### Signing Builds
+   ### Android
+     - To sign builds and publishing refer this. <a href="https://ionicframework.com/docs/deployment/play-store">https://ionicframework.com/docs/deployment/play-store</a>.
+   ### IOS
+     - To sign builds and publishing refer this. <a href="https://ionicframework.com/docs/deployment/app-store">https://ionicframework.com/docs/deployment/app-store</a>.</p>
+      <ul>
+        <li>Deploying apps on Google Play Store and Apple App Store is out of the scope of this document.</li>
+        <li>Kindly refer to this <a href="https://ionicframework.com/docs/intro/deploying/">guide</a> for further instructions.</li>
+      </ul>
+    </li>
+  </ol>
+
+</div>
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+</div>
+
+
+
+                </div>
+                <!-- /.row -->
+            </div>           
+  <!-- /.container -->
+</div>
+<!-- /#main -->
+</div>
+
+<footer>
+  <div class="oval-wrap"><div class="bg-oval"><img src="images/bgoval-dark.svg"></div></div>
+  <div class="row">
+    <div class="col-lg-12 footer" style="text-align: center;">
+     &copy;2020 Opus Labs. All rights reserved. <br />
+      Site last generated: Dec 21, 2020 <br />
+     <p style="margin-top: 20px"><img src="images/company_logo.png" alt="Company logo"/></p>
+   </div>
+ </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js" integrity="sha256-BuxrUdr/4YoztQLxT6xmdO6hSQw2d6BtBUY1pteGds4=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+	/* ---- particles.js config ---- */
+
+  particlesJS("particles-js", {
+    "particles": {
+      "number": {
+        "value": 100,
+        "density": {
+          "enable": false,
+          "value_area": 800
+        }
+      },
+      "color": {
+        "value": "#ffffff"
+      },
+      "shape": {
+        "type": "circle",
+        "stroke": {
+          "width": 0,
+          "color": "#000000"
+        },
+        "polygon": {
+          "nb_sides": 5
+        },
+        "image": {
+          "src": "img/github.svg",
+          "width": 100,
+          "height": 100
+        }
+      },
+      "opacity": {
+        "value": 0.4,
+        "random": false,
+        "anim": {
+          "enable": false,
+          "speed": 1,
+          "opacity_min": 0.1,
+          "sync": false
+        }
+      },
+      "size": {
+        "value": 3,
+        "random": true,
+        "anim": {
+          "enable": false,
+          "speed": 40,
+          "size_min": 0.1,
+          "sync": false
+        }
+      },
+      "line_linked": {
+        "enable": true,
+        "distance": 150,
+        "color": "#ffffff",
+        "opacity": 0.4,
+        "width": 1
+      },
+      "move": {
+        "enable": true,
+        "speed": 3,
+        "direction": "none",
+        "random": true,
+        "straight": false,
+        "out_mode": "out",
+        "bounce": true,
+        "attract": {
+          "enable": false,
+          "rotateX": 600,
+          "rotateY": 1200
+        }
+      }
+    },
+    "interactivity": {
+      "detect_on": "canvas",
+      "events": {
+        "onhover": {
+          "enable": true,
+          "mode": "grab"
+        },
+        "onclick": {
+          "enable": true,
+          "mode": "push"
+        },
+        "resize": true
+      },
+      "modes": {
+        "grab": {
+          "distance": 140,
+          "line_linked": {
+            "opacity": 1
+          }
+        },
+        "bubble": {
+          "distance": 400,
+          "size": 40,
+          "duration": 2,
+          "opacity": 8,
+          "speed": 3
+        },
+        "repulse": {
+          "distance": 200,
+          "duration": 0.4
+        },
+        "push": {
+          "particles_nb": 4
+        },
+        "remove": {
+          "particles_nb": 2
+        }
+      }
+    },
+    "retina_detect": true
+  });
+</script>
+
+</body>
+
+<!-- the google_analytics_id gets auto inserted from the config file -->
+
+
+
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-122814558-2','auto');ga('require','displayfeatures');ga('send','pageview');</script>
+
+
+</html>
