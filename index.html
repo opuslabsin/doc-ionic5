@@ -585,29 +585,34 @@
     </li>
     <li>
       <h3 id="setup-and-customization">Setup And Customization</h3>
-      <p>### resources</p>
+      <h2 id="resources-folder">resources folder</h2>
       <ul>
-        <li>To change app icon and splash in your template for refer <a href="https://stackoverflow.com/questions/55813237/how-to-change-default-app-icon-and-splash-screen-in-ionic-4-application">https://stackoverflow.com/questions/55813237/how-to-change-default-app-icon-and-splash-screen-in-ionic-4-application</a>.
- ### src
-   ### app</li>
-        <li>Here show all components first and to change according your screens. 
-   ### assets
-          <ul>
-            <li><code class="language-plaintext highlighter-rouge">images</code> To change logo and other image assets (only <code class="language-plaintext highlighter-rouge">.png</code> files) in your templete from <code class="language-plaintext highlighter-rouge">src/assets/images</code>.</li>
-            <li>To chnage other image assets (other <code class="language-plaintext highlighter-rouge">name</code> image). Here you put assets path <code class="language-plaintext highlighter-rouge">src/assets/image_name.png</code> in your screen <code class="language-plaintext highlighter-rouge">app</code> <code class="language-plaintext highlighter-rouge">your_page_name.page.html</code>. to display same screen.
- ### Changing Colours And Theme Settings.
-              <ul>
-                <li>For this you’ll have to focus on two files. i.e.</li>
-                <li><code class="language-plaintext highlighter-rouge">src/global.scss</code> - containing application’s primary colours and overall styling of various components.</li>
-                <li><code class="language-plaintext highlighter-rouge">src/theme/variables.scss</code> - containing primary colours for various widgets used throughout the application. For example radio buttons. Also used for dark mode colouring.</li>
-                <li>Find <code class="language-plaintext highlighter-rouge">--primary</code> and <code class="language-plaintext highlighter-rouge">--secondary</code> in <code class="language-plaintext highlighter-rouge">global.scss</code> to change main <code class="language-plaintext highlighter-rouge">respective colour</code> of the app. Other colour codes below are also customizable.</li>
-                <li>Find <code class="language-plaintext highlighter-rouge">--ion-color-primary</code> in <code class="language-plaintext highlighter-rouge">theme/variable.scss</code> to change main <code class="language-plaintext highlighter-rouge">respective colour</code> of widgets in application.</li>
-                <li>Find <code class="language-plaintext highlighter-rouge">@media (prefers-color-scheme: dark)</code> in <code class="language-plaintext highlighter-rouge">theme/variable.scss</code> and uncomment everything below from here to enable System wide dark mode colour settings.
- ### config.xml</li>
-              </ul>
-            </li>
-          </ul>
-        </li>
+        <li>To change app icon and splash in your template for refer <a href="https://stackoverflow.com/questions/55813237/how-to-change-default-app-icon-and-splash-screen-in-ionic-4-application">https://stackoverflow.com/questions/55813237/how-to-change-default-app-icon-and-splash-screen-in-ionic-4-application</a>.</li>
+      </ul>
+
+      <h2 id="srcapp-folder">src/app folder</h2>
+      <ul>
+        <li>Here show all components first and to change according your screens.</li>
+      </ul>
+
+      <h2 id="srcassets-folder">src/assets folder</h2>
+      <ul>
+        <li><code class="language-plaintext highlighter-rouge">images</code> To change logo and other image assets (only <code class="language-plaintext highlighter-rouge">.png</code> files) in your templete from <code class="language-plaintext highlighter-rouge">src/assets/images</code>.</li>
+        <li>To chnage other image assets (other <code class="language-plaintext highlighter-rouge">name</code> image). Here you put assets path <code class="language-plaintext highlighter-rouge">src/assets/image_name.png</code> in your screen <code class="language-plaintext highlighter-rouge">app</code> <code class="language-plaintext highlighter-rouge">your_page_name.page.html</code>. to display same screen.</li>
+      </ul>
+
+      <h2 id="changing-colours-and-theme-settings">Changing Colours And Theme Settings.</h2>
+      <ul>
+        <li>For this you’ll have to focus on two files. i.e.</li>
+        <li><code class="language-plaintext highlighter-rouge">src/global.scss</code> - containing application’s primary colours and overall styling of various components.</li>
+        <li><code class="language-plaintext highlighter-rouge">src/theme/variables.scss</code> - containing primary colours for various widgets used throughout the application. For example radio buttons. Also used for dark mode colouring.</li>
+        <li>Find <code class="language-plaintext highlighter-rouge">--primary</code> and <code class="language-plaintext highlighter-rouge">--secondary</code> in <code class="language-plaintext highlighter-rouge">global.scss</code> to change main <code class="language-plaintext highlighter-rouge">respective colour</code> of the app. Other colour codes below are also customizable.</li>
+        <li>Find <code class="language-plaintext highlighter-rouge">--ion-color-primary</code> in <code class="language-plaintext highlighter-rouge">theme/variable.scss</code> to change main <code class="language-plaintext highlighter-rouge">respective colour</code> of widgets in application.</li>
+        <li>Find <code class="language-plaintext highlighter-rouge">@media (prefers-color-scheme: dark)</code> in <code class="language-plaintext highlighter-rouge">theme/variable.scss</code> and uncomment everything below from here to enable System wide dark mode colour settings.</li>
+      </ul>
+
+      <h2 id="configxml">config.xml</h2>
+      <ul>
         <li><code class="language-plaintext highlighter-rouge">config.xml</code> has two values. Your template’s package name/template id in id parameter in line no. 2. and template name in line number 3.</li>
       </ul>
     </li>
@@ -616,35 +621,38 @@
       <ul>
         <li><strong>Requires Step 1: Download And Setup Ionic</strong></li>
         <li>Download and install Java here: <a href="https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html">https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html</a></li>
-        <li>Android SDK setup. We recommend installing <code class="language-plaintext highlighter-rouge">Android Studio</code> for easy setup. <a href="https://developer.android.com/studio/">https://developer.android.com/studio/</a>
- ### Android Build
-          <ul>
-            <li>To add platform run <code class="language-plaintext highlighter-rouge">ionic cordova platform add android@8.1.0</code></li>
-            <li>To prepare platform run <code class="language-plaintext highlighter-rouge">ionic cordova prepare android</code></li>
-            <li>To build debuggable .apk file run <code class="language-plaintext highlighter-rouge">ionic cordova build android --prod</code></li>
-            <li>To build release unsigned .apk file run <code class="language-plaintext highlighter-rouge">ionic cordova build android --prod --release</code></li>
-            <li>To generate a <code class="language-plaintext highlighter-rouge">Keystore</code> refer this. <a href="https://stackoverflow.com/questions/11446121/how-do-i-generate-a-keystore-for-google-play">https://stackoverflow.com/questions/11446121/how-do-i-generate-a-keystore-for-google-play</a></li>
-            <li>To sign builds and publishing refer this. <a href="https://ionicframework.com/docs/deployment/play-store">https://ionicframework.com/docs/deployment/play-store</a>.
- ### IOS Build</li>
-            <li>To add platform run <code class="language-plaintext highlighter-rouge">ionic cordova platform add ios@5.1.1</code></li>
-            <li>To prepare platform run <code class="language-plaintext highlighter-rouge">ionic cordova prepare ios</code></li>
-            <li>To build debuggable .apk file run <code class="language-plaintext highlighter-rouge">ionic cordova build ios --prod</code></li>
-            <li>Opening respective project, open the .xcworkspace file in ./platforms/ios/ to start Xcode.</li>
-            <li>For XCode setup refer this. <a href="https://ionicframework.com/docs/developing/ios">https://ionicframework.com/docs/developing/ios</a></li>
-          </ul>
-        </li>
+        <li>Android SDK setup. We recommend installing <code class="language-plaintext highlighter-rouge">Android Studio</code> for easy setup. <a href="https://developer.android.com/studio/">https://developer.android.com/studio/</a></li>
+      </ul>
+
+      <h2 id="android-build">Android Build</h2>
+      <ul>
+        <li>To add platform run <code class="language-plaintext highlighter-rouge">ionic cordova platform add android@8.1.0</code></li>
+        <li>To prepare platform run <code class="language-plaintext highlighter-rouge">ionic cordova prepare android</code></li>
+        <li>To build debuggable .apk file run <code class="language-plaintext highlighter-rouge">ionic cordova build android --prod</code></li>
+        <li>To build release unsigned .apk file run <code class="language-plaintext highlighter-rouge">ionic cordova build android --prod --release</code></li>
+        <li>To generate a <code class="language-plaintext highlighter-rouge">Keystore</code> refer this. <a href="https://stackoverflow.com/questions/11446121/how-do-i-generate-a-keystore-for-google-play">https://stackoverflow.com/questions/11446121/how-do-i-generate-a-keystore-for-google-play</a></li>
+        <li>To sign builds and publishing refer this. <a href="https://ionicframework.com/docs/deployment/play-store">https://ionicframework.com/docs/deployment/play-store</a>.</li>
+      </ul>
+
+      <h2 id="ios-build">iOS Build</h2>
+      <ul>
+        <li>To add platform run <code class="language-plaintext highlighter-rouge">ionic cordova platform add ios@5.1.1</code></li>
+        <li>To prepare platform run <code class="language-plaintext highlighter-rouge">ionic cordova prepare ios</code></li>
+        <li>To build debuggable .apk file run <code class="language-plaintext highlighter-rouge">ionic cordova build ios --prod</code></li>
+        <li>Opening respective project, open the .xcworkspace file in ./platforms/ios/ to start Xcode.</li>
+        <li>For XCode setup refer this. <a href="https://ionicframework.com/docs/developing/ios">https://ionicframework.com/docs/developing/ios</a></li>
       </ul>
     </li>
     <li>
       <h3 id="deployment-of-applications">Deployment Of Applications</h3>
-      <p>### Signing Builds
-   ### Android
-     - To sign builds and publishing refer this. <a href="https://ionicframework.com/docs/deployment/play-store">https://ionicframework.com/docs/deployment/play-store</a>.
-   ### IOS
-     - To sign builds and publishing refer this. <a href="https://ionicframework.com/docs/deployment/app-store">https://ionicframework.com/docs/deployment/app-store</a>.</p>
+      <h2 id="android">Android</h2>
       <ul>
-        <li>Deploying apps on Google Play Store and Apple App Store is out of the scope of this document.</li>
-        <li>Kindly refer to this <a href="https://ionicframework.com/docs/intro/deploying/">guide</a> for further instructions.</li>
+        <li>To sign builds and publishing refer this. <a href="https://ionicframework.com/docs/v1/guide/publishing.html">https://ionicframework.com/docs/v1/guide/publishing.html</a>.</li>
+      </ul>
+
+      <h2 id="ios">iOS</h2>
+      <ul>
+        <li>To sign builds and publishing refer this. <a href="https://ionicframework.com/docs/v1/guide/publishing.html">https://ionicframework.com/docs/v1/guide/publishing.html</a>.</li>
       </ul>
     </li>
   </ol>
